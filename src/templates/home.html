@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block header %}
+
+
+
+{% endblock %}
+
+<!-- ***************************************************-->
+
+{% block main %}
+
+<div class="contenedor">
+
+<h1> SORTEO </h1>
+
+<h2> Prueba tu suerte! Si te toca podrás optar por el sorteo de final de mes!</h2>
+
+<form action="" method="POST">
+
+    <label>Nombre:</label>
+<br>
+    <input type="text" name="nombre" id="nombre" placeholder="Jorge">
+<br>
+    <label>DNI sin letra:</label>
+<br>
+    <input type="number" name="dni" id="dni" placeholder="43203714">
+<br>
+    <input type="submit" value="Jugar">
+
+</form>
+
+</div>
+
+{% if res %}
+
+<div>Se ha registrado satisfactoriamente</div>
+
+{% elif res == False %}
+
+<div>No se ha registrado</div>
+
+{% endif %}
+
+{% endblock %}
+
+{% block footer %}
+
+
+{% endblock %}
